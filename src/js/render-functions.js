@@ -33,9 +33,10 @@ new SimpleLightbox('.gallery a');
 }
 
 export function showLoader() {
-  document.getElementById('loader').style.display = 'block';
+  document.getElementById('loader').classList.remove('hidden');
 }
 
 export function hideLoader() {
-  document.getElementById('loader').style.display = 'none';
+  document.getElementById('loader').classList.add('hidden');
 }
+
